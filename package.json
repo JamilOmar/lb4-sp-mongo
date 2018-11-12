@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build:apidocs": "lb-apidocs",
-    "build": "lb-tsc es2017 --outDir dist",
+    "build": "lb-tsc es2017 --outDir dist --strictNullChecks false",
     "build:watch": "lb-tsc --watch",
     "clean": "lb-clean dist",
     "lint": "npm run prettier:check && npm run tslint",
@@ -56,6 +56,8 @@
     "@pnp/nodejs": "^1.2.5",
     "@pnp/odata": "^1.2.5",
     "@pnp/sp": "^1.2.5",
+    "@types/lodash": "^4.14.118",
+    "lodash": "^4.17.11",
     "loopback-connector-mongodb": "^3.9.2",
     "memory": "0.0.3"
   },

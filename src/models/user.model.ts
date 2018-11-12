@@ -6,16 +6,32 @@ export class User extends Entity {
     type: 'number',
     id: true,
     required: true,
+    sp: {
+      columnName: "ID",
+      dataType: "integer",
+      dataLength: 40,
+      nullable: "Y"
+    }
   })
   id: number;
 
   @property({
     type: 'string',
+    sp: {
+      columnName: "Title",
+      dataType: "text",
+      dataLength: 40,
+      nullable: "Y"
+    }
   })
   name?: string;
 
   @property({
     type: 'string',
+    sp: {
+      columnName: "Job",
+      dataType: "text"
+    }
   })
   job?: string;
 
